@@ -1,0 +1,9 @@
+android/**/*
+app/generated/**
+babel.config.js
+babel.config.js
+coverage/**/*
+metro.config.js
+preprocessor.js
+test/**/*
+dist/**/*
