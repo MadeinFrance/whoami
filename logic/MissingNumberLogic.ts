@@ -4,7 +4,7 @@
  */
 
 const validateSizeBox = (input: string) => {
-  const userInput = parseInt(input);
+  const userInput = parseInt(input, 10);
   return userInput > 0 && userInput < 10;
 };
 
@@ -27,7 +27,7 @@ const validateBoxNumbers = (
 
   const isInputValid =
     Array.isArray(boxItemsNumbers) &&
-    boxItemsNumbers.length === requiredAmount &&
+    boxItemsNumbers.length === parseInt(requiredAmount, 10) &&
     !someAreNotIntegers &&
     shouldContainZero &&
     shouldContainZeroOneTime;

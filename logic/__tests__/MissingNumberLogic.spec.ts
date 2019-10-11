@@ -38,6 +38,9 @@ describe('logic/MissingNumber', () => {
     expect(
       MissingNumberLogic.validateBoxNumbers(['1', '0', '0', '3'], defaultItems),
     ).toBeFalsy();
+    expect(
+      MissingNumberLogic.validateBoxNumbers(correctInput.map(String), '1'),
+    ).toBeFalsy();
   });
 
   it('should validate the items', () => {
